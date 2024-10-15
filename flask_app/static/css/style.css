@@ -1,0 +1,85 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.p-10{
+    padding: 10px;
+}
+
+.p-20{
+    padding: 20px;
+}
+
+/* Login */
+
+#login-bg{
+    background-image: url("/static/img/login/Design_1.png");
+    background-repeat: no-repeat;
+}
+
+.borders {
+    border: 5px solid dodgerblue;
+    border-radius: 10px;
+}
+
+
+/* Shop */
+
+.shop-pic {
+    height: 400px;
+    width: 350px;
+    border-radius: 30px;
+}
+
+.shop-border {
+    border: 5px solid dodgerblue;
+    border-radius: 10px;
+}
+
+/* Character Selection */
+
+.selection-pic {
+    height: 500px;
+    width: 370px;
+    border-radius: 30px;
+}
+
+.selection-border {
+    border: 5px solid goldenrod;
+    border-radius: 10px;
+}
+
+.sub-border{
+    border: 3px solid dodgerblue;
+    border-radius: 10px;
+}
+
+.class-select{
+    font-family: cursive;
+}
+
+.selection-table{
+    border-spacing: 10px;
+}
+
+.select-btn{
+    border: 3px solid dodgerblue;
+    border-radius: 10px;
+    background-color: dodgerblue;
+    color: white;
+}
+
+/* Dashboard */
+
+.dash-border {
+    border: 5px solid dodgerblue;
+    border-radius: 10px;
+}
+
+.profile-pic{
+    border: 5px solid goldenrod;
+    height: 300px;
+    border-radius: 50%;
+}

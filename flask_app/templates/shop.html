@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='/css/style.css')}}"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Account</a>
+              <a class="nav-link" href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+      </nav>  
+    <!-- Top -->
+    <div class="d-flex justify-content-center p-5">
+         <!-- buy window -->
+         <div class="p-3 text-center shop-border">
+            <table class="table table-sm">
+                <tr>
+                    <th>Items</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Shining Katana</td>
+                    <td>Handle with care, very sharp blade. <br>
+                        Special: Double Slash
+                    </td>
+                    <td>40 Gold</td>
+                    <td>1</td>
+                    <td>Buy?</td>
+                </tr>
+                <tr>
+                    <td>Oversized T-Shirt</td>
+                    <td>Just in case you need it</td>
+                    <td>3 Gold</td>
+                    <td>3</td>
+                    <td>Buy?</td>
+                </tr>
+                <tr>
+                    <td>Corn</td>
+                    <td>Yellow and sweet</td>
+                    <td>3 Gold</td>
+                    <td>3</td>
+                    <td>Buy?</td>
+                </tr>
+            </table>
+        </div>
+        <div class="p-5">
+        <!-- shopkeeper -->
+            <img src="{{ url_for('static', filename='img/shop/shopkeeper.jpg') }}"
+            class="shop-pic">
+            <div class="text-center">
+            <h4>Welcome to my shop!</h4>
+            <h4>I offer haggle-free, consistent,</h4>
+            <h4>sell low, buy high pricing</h4>
+            </div>
+
+        </div>
+        <div class="d-flex justify-content-center">
+    
+        </div>
+    </div>
+        <!-- Bottom -->
+    <div class="d-flex justify-content-center p-3">
+        <div class="p-5">
+        <img src="{{ url_for('static', filename='img/main_classes/main_sam.jpg') }}"
+            class="shop-pic">
+        </div>
+        <!-- sell window -->
+        <div class="p-3 text-center shop-border">
+            <table class="table table-sm">
+                <tr>
+                <th>Items</th>
+                <th>Sell Price</th>
+                <th>Quantity</th>
+                <th></th>
+                </tr>
+                <tr>
+                <td>Rusty Katana</td>
+                <td>2 Gold</td>
+                <td>1</td>
+                <td><a href="#">Sell?</a></td>
+                </tr>
+                <tr>
+                <td>Tomato</td>
+                <td>3 Gold</td>
+                <td>3</td>
+                <td><a href="#">Sell?</a></td>
+                </tr>
+                <tr>
+                <td>Corn</td>
+                <td>1 Gold</td>
+                <td>3</td>
+                <td><a href="#">Sell?</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

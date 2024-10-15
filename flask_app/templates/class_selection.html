@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Selection</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='/css/style.css')}}"
+    />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Account</a>
+              <a class="nav-link" href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    
+    <div class="d-flex justify-content-center p-5 gap-5">
+        <div class="selection-border p-2 text-center">
+            <h3>Class Selection</h3>
+            <h2 class="p-20 class-select">Ninja</h2>
+            <h2 class="p-20 class-select">Samurai</h2>
+            <input placeholder="Username" style="margin-top: 250px" class="sub-border">
+            <a href="/dashboard"><h4 class="p-20 class-select"><button class="select-btn container-fluid">Select</button></h4></a>
+        </div>
+        <div class="d-flex gap-5">
+            <div class="selection-border p-5">
+                <img src="{{ url_for('static', filename='img/main_classes/main_sam.jpg') }}"
+                class="selection-pic">  
+            </div>
+            <div class="selection-border">
+                <div class="sub-border container-fluid" style="margin-bottom: 30px">
+                    <p class="fw-bold">Base Stats:</p>
+                    <table class="text-center table">
+                        <tr>
+                            <th>Stat</th>
+                            <th>Value</th>
+                        </tr>
+                        <tr>
+                            <td>Health</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Defense</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>Attack</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td>STR</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>VIT</td>
+                            <td>20</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div class="sub-border container-fluid">
+                    <p class="fw-bold">Base Weapon:</p>
+                    <p>Rusty Katana</p>
+                    <p><span class="fw-bold">Ability:</span> Heavy Slash</p> 
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

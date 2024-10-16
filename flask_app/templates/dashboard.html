@@ -19,32 +19,80 @@
     <!-- Nav bar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
+            <a class="navbar-brand" href="/select">Character Select</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Account</a>
-                <a class="nav-link" href="#">Logout</a>
+                <a class="nav-link active" aria-current="page" href="/account">Account</a>
+                <a class="nav-link" href="/">Logout</a>
             </div>
             </div>
         </div>
     </nav>
 
-    <div class="d-flex p-5">
+    <div class="d-flex p-5 justify-content-center" style="gap: 100px">
         <!-- class profile -->
         <div>
             <img src="{{ url_for('static', filename='img/main_classes/main_sam.jpg') }}"
             class="profile-pic">
+            <div class="border-blue text-center p-2" style="margin-top: 30px">
+                <p>Skill Points Available <span class="circle">&nbsp;3&nbsp;</span></p>
 
+            <table class="table align-middle">
+                <tr>
+                    <td>Health</td>
+                    <td>100</td>
+                    <td><button class="dash-btn">&nbsp;+&nbsp;</button></td>
+                </tr>
+                <tr>
+                    <td>STR</td>
+                    <td>25</td>
+                    <td><button class="dash-btn">&nbsp;+&nbsp;</button></td>
+                </tr>
+                <tr>
+                    <td>VIT</td>
+                    <td>20</td>
+                    <td><button class="dash-btn">&nbsp;+&nbsp;</button></td>
+                </tr>
+            </table>
+            </div>
         </div>
 
 
-        <!--  -->
-        <div>
+        <!-- Paths -->
+        <div class="border-gold text-center">
+            <div class="container-fluid p-30">
+                <a href="/shop"><button class="zones container-fluid"><h2>Shop</h2></button></a>
+            </div>
+
+            <div class="container-fluid p-30">
+                <a href="/dojo"><button class="zones container-fluid"><h2>Dojo</h2></button></a>
+            </div>
+
+            <div class="container-fluid p-30">
+                <a href="/farm"><button class="zones container-fluid"><h2>Farm</h2></button></a>
+            </div>
+            
+            <h3 style="color: dodgerblue">Missions</h3>
+
+            <div class="container-fluid p-30">
+                <button class="missions container-fluid"><h2>Locked</h2></button>
+            </div>
+
+            <div class="container-fluid p-30">
+                <button class="missions container-fluid"><h2>Locked</h2></button>
+            </div>
 
         </div>
 
         <!--  -->
-        <div>
-
+        <div class="border-blue p-3">
+            <img src="{{ url_for('static', filename='img/home/home.jpg') }}"
+                class="dash-zones-pic">  
+            <p>🦦Hint:</p>
+            <p class="dash-limit">One of trainees in the Dojo holds the information to unlocking your mission</p>
         </div>
 
 

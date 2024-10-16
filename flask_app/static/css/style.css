@@ -1,6 +1,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-family: cursive
 
 }
 
@@ -12,11 +13,28 @@
     padding: 20px;
 }
 
+.p-30{
+    padding: 30px;
+}
+
+.gap-10{
+    gap: 10px;
+}
+
+.gap-30{
+    gap: 30px;
+}
+
+.m-10 {
+    margin-bottom: 10px;
+}
+
 /* Login */
 
 #login-bg{
-    background-image: url("/static/img/login/Design_1.png");
+    background-image: url("/static/img/login/login.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .borders {
@@ -73,8 +91,15 @@
 
 /* Dashboard */
 
-.dash-border {
+.border-blue {
     border: 5px solid dodgerblue;
+    border-radius: 10px;
+    background-color: white;
+    color: dodgerblue
+}
+
+.border-gold {
+    border: 5px solid goldenrod;
     border-radius: 10px;
 }
 
@@ -82,4 +107,202 @@
     border: 5px solid goldenrod;
     height: 300px;
     border-radius: 50%;
+}
+
+.circle{
+    border-radius: 50%;
+    background-color: dodgerblue;
+    font-size: 40px;
+    color: white;
+    font-family: cursive;
+}
+
+.dash-btn{
+    font-size: 30px ;
+    color: dodgerblue;
+    font-family: cursive;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid dodgerblue;
+    
+}
+
+.dash-text{
+    font-size: 40;
+    font-family: cursive;
+}
+
+.zones {
+    border: 5px solid dodgerblue;
+    border-radius: 10px;
+    background-color: dodgerblue;
+    color: white
+}
+
+.missions{
+    border: 5px solid dodgerblue;
+    border-radius: 10px;
+    background-color: white;
+    color: dodgerblue
+}
+
+.dash-zones-pic{
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.dash-limit{
+    width: 400px;
+    word-wrap: break-word;
+}
+
+/* Farm */
+
+.farm-crops{
+    border-spacing: 30px;
+    width: 30px;
+}
+
+.farm-table{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.farm-img{
+    width: 400px;
+    height: 450px;
+    border-radius: 10px;
+    border: 5px solid dodgerblue;
+}
+
+.farm-border{
+    border: 5px solid goldenrod;
+    border-radius: 10px;
+}
+
+.farm-btn{
+    background-color: white;
+    border-radius: 10px;
+    color: dodgerblue;
+    border: 3px solid dodgerblue;
+    width: 70px;
+    box-shadow: 2px 2px darkgrey;
+}
+
+#farm-bg{
+    background-image: url("/static/img/farm/farm-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+/* Account */
+
+.account-border{
+    border: 5px solid dodgerblue;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#form input{
+    border-radius: 4px;
+    
+}
+
+#account-bg{
+    background-image: url("/static/img/account/account-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#submit{
+    width: 80px;
+    background-color: dodgerblue;
+    color: white;
+    box-shadow: 1px 1px darkgrey;
+    border-color: dodgerblue;
+}
+
+/* Dojo */
+
+#dojo-bg{
+    background-image: url("/static/img/dojo/dojo-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.dojo-border{
+    border: 5px solid white;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.dojo-btn{
+    width: 80px;
+    background-color: white;
+    color: red;
+    box-shadow: 1px 1px darkgrey;
+    border-color: red;
+    border-radius: 5px;
+}
+
+.dojo-table th, .dojo-table td {
+    padding: 10px;
+}
+
+.dojo-commands{
+    width: 370px;
+    height: 170px;
+}
+
+.dojo-pad{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#opponent-pane{
+    height: 100%;  
+}
+
+.progress-bar{
+    border-radius: 10px;
+    height: 25px;
+    background-color: red;
+    width: 200px;
+}
+
+#attack-btn{
+    width: 70px;
+    background-color: dodgerblue;
+    border: 2px solid dodgerblue;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 2px 2px darkgrey;
+}
+
+#item-btn{
+    width: 60px;
+    background-color: gold;
+    border: 2px solid gold;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 2px 2px darkgrey;
+}
+
+#sp-btn{
+    width: 70px;
+    background-color: seagreen;
+    border: 2px solid seagreen;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 2px 2px darkgrey;
+}
+
+#battle-log{
+    width: 1130px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
 }

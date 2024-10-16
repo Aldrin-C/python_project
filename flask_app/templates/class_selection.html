@@ -18,14 +18,14 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Home</a>
+          <a class="navbar-brand" href="/dashboard">Home</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Account</a>
-              <a class="nav-link" href="#">Logout</a>
+              <a class="nav-link active" aria-current="page" href="/account">Account</a>
+              <a class="nav-link" href="/">Logout</a>
             </div>
           </div>
         </div>
@@ -42,7 +42,7 @@
         <div class="d-flex gap-5">
             <div class="selection-border p-5">
                 <img src="{{ url_for('static', filename='img/main_classes/main_sam.jpg') }}"
-                class="selection-pic">  
+                alt="samurai" class="selection-pic">  
             </div>
             <div class="selection-border">
                 <div class="sub-border container-fluid" style="margin-bottom: 30px">

@@ -1,6 +1,6 @@
 from flask_app import app
 
-from flask_app.controllers import controllers
+from flask_app.controllers import game_controller, user_controller
 
 
 if __name__ == "__main__":

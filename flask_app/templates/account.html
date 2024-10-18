@@ -25,8 +25,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="/select">Character Select</a>
-                <a class="nav-link" href="/">Logout</a>
+                <a class="nav-link active" aria-current="page" href="/select">Character Creation</a>
+                <a class="nav-link" href="/logout">Logout</a>
             </div>
             </div>
         </div>
@@ -45,21 +45,44 @@
                     <label for="email">Email:</label>
                 </div>
                 <div id="form">
-                    <input id="first_name"><br><br>
-                    <input id="last_name"><br><br>
-                    <input id="email"><br><br>
+                    <input id="first_name" value="{{logged_user.first_name}}" name="first_name"><br><br>
+                    <input id="last_name" value="{{logged_user.last_name}}" name="last_name"><br><br>
+                    <input id="email" value="{{logged_user.email}}" name="email"><br><br>
                     <input id="submit" type="submit" value="Update">
+                    <input type="hidden" value="{{session.user_id}}" name="id">
                 </div>
                 </form>
             </div>
         </div>
         <div>
             <div class="account-border">
-            <h3 class="text-center p-10">Characters</h3>
+            <h3 class="text-center p-10">Avatars</h3>
+            
             <div class="d-flex justify-content-evenly p-2">
-                <p>Name</p>
-                <p>Class</p>
+                <table class="table" style="width: 300px">
+                    
+                    <tr>
+                        <th>Name</th>
+                        <th>Class</th>
+                        <th></th>
+                    </tr>
+                    {% for one_avatar in all_avatars %}
+                        {% if session.user_id==one_avatar.user.id: %}
+                    <tr>
+                        <td><a href="/dashboard">{{one_avatar.name}}</a></td>
+                        <td>{{one_avatar.type}}</td>
+                        <form action="/avatar/{{one_avatar.id}}/delete" method="post">
+                        <input type="hidden" value={{one_avatar.id}} name="id">
+                        <td style="color: red">
+                            <input type="submit" value="delete">
+                        </td>
+                        </form>
+                    </tr> 
+                        {% endif %}
+                    {% endfor %}
+                </table>
             </div>
+            
         </div>
     
     </div>

@@ -89,6 +89,15 @@
     color: white;
 }
 
+#create_class-btn {
+    width: 150px;
+    background-color: dodgerblue;
+    border: 2px solid dodgerblue;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 2px 2px darkgrey;
+}
+
 /* Dashboard */
 
 .border-blue {
@@ -191,9 +200,9 @@
 }
 
 #farm-bg{
-    background-image: url("/static/img/farm/farm-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;  
+    background-image: url("/static/img/farm/field-bg.jpg");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
 }
 
 /* Account */
@@ -305,4 +314,36 @@
     height: 200px;
     background-color: white;
     border-radius: 10px;
+}
+
+#myDIV{
+    display: none;
+}
+
+#myDIV1{
+    display: none;
+}
+
+#myDIV2{
+    display: none;
+}
+
+/* Login */
+
+#signup-btn {
+    width: 150px;
+    background-color: dodgerblue;
+    border: 2px solid dodgerblue;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 2px 2px darkgrey;
+}
+
+#login-btn {
+    width: 150px;
+    background-color: seagreen;
+    border: 2px solid seagreen;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 2px 2px darkgrey;
 }
